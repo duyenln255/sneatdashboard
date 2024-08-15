@@ -1,0 +1,18 @@
+.pro-sidebar-inner {
+    height: 100vh; /* Chiều cao 100% của khung nhìn */
+    overflow-y: auto; /* Cuộn dọc nếu nội dung quá dài */
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-sidebar {
+    max-width: 280px; /* Điều chỉnh theo kích thước Sidebar của bạn */
+    height: 100vh; /* Đảm bảo Sidebar chiếm toàn bộ chiều cao khung nhìn */
+    overflow-y: auto;
+}
+
+/* Khi Sidebar bị thu gọn */
+.pro-sidebar.collapsed {
+    max-width: 80px; /* Điều chỉnh chiều rộng Sidebar khi thu gọn */
+    height: 100vh; /* Đảm bảo chiều cao Sidebar khi thu gọn */
+}

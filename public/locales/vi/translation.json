@@ -1,0 +1,68 @@
+{
+    "product_list": "Danh sách sản phẩm",
+    "display": "Hiển thị",
+    "search": "Tìm kiếm",
+    "loading": "Đang tải...",
+    "id": "ID",
+    "product_name": "Tên loại sản phẩm",
+    "gtin": "Mã GTIN",
+    "status": "Trạng thái",
+    "actions": "Hành động",
+    "active": "ĐANG SẢN XUẤT",
+    "inactive": "NGỪNG SẢN XUẤT",
+    "total_products": "Tổng số sản phẩm",
+    "total_pages": "Tổng số trang",
+    "status_updated_successfully": "Cập nhật trạng thái thành công!",
+
+
+    
+    "dashboard": "Bảng điều khiển",
+    "contact_form": "Biểu mẫu liên hệ",
+    "profile": "Hồ sơ",
+    "products": "Sản phẩm",
+    "apps_pages": "ỨNG DỤNG & TRANG",
+    "ecommerce": "Thương mại điện tử",
+    "shop": "Cửa hàng",
+    "academy": "Học viện",
+    "logistics": "Hậu cần",
+    "users": "Người dùng",
+    "email": "Thư điện tử",
+    "chat": "Trò chuyện",
+    "calendar": "Lịch",
+    "kanban": "Kanban",
+    "invoice": "Hóa đơn",
+    "roles_permissions": "Quyền & Vai trò",
+    "list": "Danh sách",
+    "view": "Xem",
+    "inbox": "Hộp thư đến",
+    "compose": "Soạn thảo",
+    "conversations": "Cuộc hội thoại",
+    "messages": "Tin nhắn",
+    "events": "Sự kiện",
+    "reminders": "Nhắc nhở",
+    "boards": "Bảng",
+    "tasks": "Nhiệm vụ",
+    "create": "Tạo mới",
+    "roles": "Vai trò",
+    "permissions": "Quyền hạn",
+
+
+
+    "search_placeholder": "Tìm kiếm ⌘K",
+    "notifications": "Thông báo",
+    "see_more": "Xem thêm",
+    "view_profile": "Xem hồ sơ",
+    "settings_privacy": "Cài đặt & Quyền riêng tư",
+    "help": "Trợ giúp",
+    "sign_out": "Đăng xuất",
+    "new_comment": "Bình luận mới về bài viết của bạn",
+    "new_follower": "Người theo dõi mới",
+    "update_available": "Cập nhật có sẵn",
+
+
+
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
+    "japanese": "Tiếng Nhật"
+  }
+  

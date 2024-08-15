@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --table-background: #ffffff;
+    --table-text: #000000;
+    --table-border: #ddd;
+    --button-background: #f6f6ff;
+    --button-text: #696bfe;
+    --button-hover-background: #696bfe;
+    --button-hover-text: #ffffff;
+    --highlight-background: #f0f8ff; /* Background color for highlighting */
+    --highlight-text: #000000; /* Text color for highlighting */
+}
+
+[data-theme="dark"] {
+    --background-color: #1c1c1c;
+    --text-color: #f1f1f1;
+    --table-background: #2b2b2b;
+    --table-text: #f1f1f1;
+    --table-border: #444;
+    --button-background: #3a3a3a;
+    --button-text: #ffffff;
+    --button-hover-background: #696bfe;
+    --button-hover-text: #ffffff;
+    --highlight-background: #3a3a3a; /* Background color for highlighting in dark mode */
+    --highlight-text: #ffffff; /* Text color for highlighting in dark mode */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.product-page {
+    margin: 50px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top:  0px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align filter to the right */
+    margin-bottom: 10px; /* Add space below the filter */
+}
+
+.table-container {
+    background-color: var(--table-background);
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: var(--table-text);
+
+}
+
+.product-table {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    border: 0; /* Remove border */
+    color: #3d3d79;
+
+}
+
+.product-table th, .product-table td {
+    background-color: var(--table-background); /* White background for the container */
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--table-border);
+}
+
+.product-table th {
+    color: #696bfe;
+    font-size: 1 rem; /* Increase font size for headers */
+    font-weight: 600; /* Make headers bold */
+}
+.product-table tr:hover {
+    background-color: var(--highlight-background); /* Highlight background on hover */
+    color: var(--highlight-text); /* Highlight text color on hover */
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.icon-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 30px; 
+    height: 30px;
+}
+
+.edit-button {
+    color: #53b862;
+    background-color: #e5faec;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.delete-button {
+    color: #dc3545;
+    background-color: #fee0e2;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.activate-button {
+    color: #42c1d0;
+    background-color: #ddf6fa;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.status-label {
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 115px; /* Set fixed width */
+    height: 25px; /* Set fixed height */
+    
+}
+
+.in-production {
+    background-color: #e5f9ed;
+    color: #53b862;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stop-producing {
+    background-color: #fff5f6;
+    color: #d30228;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-button {
+    margin: 0 2px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f6f6ff;
+    color: #696bfe;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 30px;
+
+}
+
+.pagination-button:hover {
+    background-color: #696bfe;
+    color: #ffffff;
+
+}
+
+.pagination-button.active {
+    background-color: #696bfe;
+    color: #ffffff;
+}
+
+/* .total-pages {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #333;
+} */
+
+.page-size-selector {
+    display: flex;
+    align-items: center;
+}
+
+.page-size-select {
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Center-align specific columns */
+/* .product-table th:nth-child(3),
+.product-table td:nth-child(3), */
+.product-table th:nth-child(4),
+.product-table td:nth-child(4),
+.product-table th:nth-child(5),
+.product-table td:nth-child(5) {
+    text-align: center;
+}
+.pagination-ellipsis {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.popover-page-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popover-page-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-size-selector {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #696bfe; /* Đổi màu chữ của label và "rows" */
+}
+
+.page-size-select {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f6f6ff;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    color: #696bfe; /* Đổi màu chữ của label và "rows" */
+
+}
+
+.page-size-select:hover {
+    background-color: #696bfe;
+    color: #ffffff;
+}
+/* Add this to your ProductPage.css or a similar stylesheet */
+.expanded-cell-content {
+    max-height: 200px; /* Adjust this value based on your preference */
+    overflow-y: auto;
+    overflow: auto;
+
+    white-space: pre-wrap; /* Ensures that the JSON content is properly formatted */
+    background-color: #f9f9f9; /* Light background for better readability */
+    padding: 10px; /* Padding for better spacing */
+    border: 1px solid #ddd; /* Border to differentiate the content */
+}
+/* LoadingOverlay.css */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* ensure it's on top of everything else */
+}

@@ -1,0 +1,38 @@
+.debounce-filter-input {
+    width: 150px; /* Width of the input */
+    padding: 10px 15px; /* Padding inside the input */
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 13px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for the focus effect */
+}
+
+.debounce-filter-input::placeholder {
+    color: #7c7dd6; /* Placeholder text color */
+}
+
+.debounce-filter-input:focus {
+    outline: none;
+    border-color: #007bff; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+}
+
+.debounce-filter-input:hover {
+    border-color: #0056b3; /* Border color on hover */
+}
+
+/* Adding a subtle background and padding to the input container */
+.debounce-filter-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Adding some spacing between the icon and input */
+.debounce-filter-container .icon {
+    margin-right: 10px;
+}

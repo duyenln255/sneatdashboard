@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body, #root, .app, .content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Ngăn không cho toàn bộ trang cuộn, chỉ cuộn nội dung chính */
+}
+
+.content {
+  overflow-y: auto; /* Đảm bảo nội dung chính có thể cuộn dọc */
+  padding: 1rem; /* Cách lề một chút */
+  box-sizing: border-box; /* Bao gồm padding vào chiều rộng/chiều cao */
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Đặt lại màu nền và màu chữ của các trường tự động điền */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.8) inset !important;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.8) inset !important;
+  -webkit-text-fill-color: #76569a !important;
+}
+
+/* Thêm hiệu ứng khi trường tự động điền được hover, focus, hoặc active */
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.8) inset !important;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.8) inset !important;
+  -webkit-text-fill-color: #76569a !important;
+}
